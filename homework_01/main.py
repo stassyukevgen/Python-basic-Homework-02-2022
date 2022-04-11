@@ -50,6 +50,8 @@ def func_prime(pr_numbers):
         for num in range(2, pr_number):
             if pr_number % num == 0:
                 break
+
         else:
-            result.append(pr_number)
+            if pr_number > 1:
+                result.append(pr_number)
     return result
