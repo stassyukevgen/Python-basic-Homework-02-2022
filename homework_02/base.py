@@ -2,6 +2,7 @@ from abc import ABC
 from homework_02.exceptions import LowFuelError
 from homework_02.exceptions import NotEnoughFuel
 
+
 class Vehicle(ABC):
     started = False
     distance = 0
