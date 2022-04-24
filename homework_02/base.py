@@ -6,13 +6,12 @@ from homework_02.exceptions import NotEnoughFuel
 
 class Vehicle(ABC):
 
-    started = False
-    distance = 0
-    max_distance = 0
     fuel = 0
     fuel_consumption = 0
     weight = 0
-
+    started = False
+    distance = 0
+    max_distance = 0
 
     def __init__(self, weight, fuel, fuel_consumption):
         self.weight = weight
