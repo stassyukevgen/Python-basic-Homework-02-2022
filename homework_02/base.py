@@ -2,10 +2,7 @@ from abc import ABC
 from homework_02.exceptions import LowFuelError
 from homework_02.exceptions import NotEnoughFuel
 
-
-
 class Vehicle(ABC):
-
     started = False
     distance = 0
     max_distance = 0
@@ -33,4 +30,3 @@ class Vehicle(ABC):
             self.fuel = self.fuel - distance * self.fuel_consumption
         else:
             raise NotEnoughFuel
-
