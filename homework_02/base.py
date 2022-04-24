@@ -6,6 +6,7 @@ from homework_02.exceptions import NotEnoughFuel
 
 class Vehicle(ABC):
 
+
     started = False
     distance = 0
     max_distance = 0
